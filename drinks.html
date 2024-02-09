@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drinks Page</title>
+    <style>
+        /* Add CSS styles here */
+        /* Your CSS styles */
+        .vertical-text {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Have a cup with Divya Talla</h1>
+    </header>
+    <div class="container">
+        <div class="row">
+            <!-- Letters -->
+            <div class="col-sm-2">D</div>
+            <div class="col-sm-2">i</div>
+            <div class="col-sm-2">v</div>
+            <div class="col-sm-2">y</div>
+            <div class="col-sm-2">a</div>
+            <div class="col-sm-2">T</div>
+        </div>
+        <div class="row">
+            <!-- Drinks -->
+            <div class="col-md">Daiquiri</div>
+            <div class="col-md">Iced Tea</div>
+            <div class="col-md">Vodka Martini</div>
+            <div class="col-md">Yerba Mate</div>
+            <div class="col-md">Apple Cider</div>
+            <div class="col-md">Tequila Sunrise</div>
+        </div>
+    </div>
+
+  
+
+    <!-- Description of which row breaks first -->
+    <p>
+        The drinks row will break first because the .col-md class is used for the drinks row, indicating that it's styled for medium-sized screens. As the screen size decreases, elements styled with .col-md are less adaptable to smaller screens, causing the drinks row to break earlier than the letters row.
+    </p>
+</body>
+</html>
