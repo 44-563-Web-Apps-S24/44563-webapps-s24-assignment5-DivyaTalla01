@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drinks Page</title>
     <style>
-        /* Add CSS styles here */
-        /* Your CSS styles */
+       
         .vertical-text {
             writing-mode: vertical-rl;
             transform: rotate(180deg);
@@ -39,11 +38,35 @@
         </div>
     </div>
 
-  
-
     <!-- Description of which row breaks first -->
     <p>
-        The drinks row will break first because the .col-md class is used for the drinks row, indicating that it's styled for medium-sized screens. As the screen size decreases, elements styled with .col-md are less adaptable to smaller screens, causing the drinks row to break earlier than the letters row.
+        The drinks row will break first because the .col-md class is used for the drinks row,
+         indicating that it's styled for medium-sized screens. As the screen size decreases, elements 
+         styled with .col-md are less adaptable to smaller screens, causing the drinks row to break earlier
+          than the letters row.
+
     </p>
+    <!-- Images -->
+<div class="container">
+    <div class="row">
+        <div class="col-md">
+            <div class="thumbnail">
+                <img src="Daiquiri.jpg" alt="Daiquiri" class="img-responsive" style="width: 400px; height: 400px;">
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="thumbnail">
+                <img src="Iced Tea.jpg" alt="Iced Tea" class="img-responsive" style="width: 400px; height: 400px;">
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="thumbnail">
+                <img src="Apple Cider.jpg" alt="Apple Cider" class="img-responsive" style="width: 400px; height: 400px;">
+            </div>
+        </div>
+    </div>
+</div>
+
+
 </body>
 </html>
