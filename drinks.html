@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <title>Drinks Page</title>
     <style>
-       
         .vertical-text {
             writing-mode: vertical-rl;
             transform: rotate(180deg);
             white-space: nowrap;
         }
     </style>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
+
 <body>
     <header>
         <h1>Have a cup with Divya Talla</h1>
@@ -41,85 +50,146 @@
     <!-- Description of which row breaks first -->
     <p>
         The drinks row will break first because the .col-md class is used for the drinks row,
-         indicating that it's styled for medium-sized screens. As the screen size decreases, elements 
-         styled with .col-md are less adaptable to smaller screens, causing the drinks row to break earlier
-          than the letters row.
+        indicating that it's styled for medium-sized screens. As the screen size decreases, elements
+        styled with .col-md are less adaptable to smaller screens, causing the drinks row to break earlier
+        than the letters row.
 
     </p>
     <!-- Images -->
-<div class="container">
-    <div class="row">
-        <div class="col-md">
-            <div class="thumbnail">
-                <img src="Daiquiri.jpg" alt="Daiquiri" class="img-responsive" style="width: 400px; height: 400px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <div class="thumbnail">
+                    <img src="Daiquiri.jpg" alt="Daiquiri" class="img-responsive" style="width: 400px; height: 400px;">
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="thumbnail">
+                    <img src="Iced Tea.jpg" alt="Iced Tea" class="img-responsive" style="width: 400px; height: 400px;">
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="thumbnail">
+                    <img src="Apple Cider.jpg" alt="Apple Cider" class="img-responsive"
+                        style="width: 400px; height: 400px;">
+                </div>
             </div>
         </div>
-        <div class="col-md">
-            <div class="thumbnail">
-                <img src="Iced Tea.jpg" alt="Iced Tea" class="img-responsive" style="width: 400px; height: 400px;">
-            </div>
+
+        <!-- table starts here -->
+        <div class="container">
+            <h1>Styled Table </h1>
+            <table class="table table-striped table-bordered table-hover table-sm table-success">
+                <caption>"Drinks and Corresponding Stars and Fish"</caption>
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Letter</th>
+                        <th scope="col">Drink</th>
+                        <th scope="col">Star Name</th>
+                        <th scope="col">Fish</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">D</td>
+                        <td>Daiquiri</td>
+                        <td>Darzzling Star</td>
+                        <td>Dusky fish</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">I</td>
+                        <td>Iced Tea</td>
+                        <td>Iridescent</td>
+                        <td>Icy fish</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">V</td>
+                        <td>Vodka Martini</td>
+                        <td>Vibrant Star</td>
+                        <td>Velvet fish</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Y</td>
+                        <td>Yerba Mate</td>
+                        <td>yellow star</td>
+                        <td>yummy fish</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">A</td>
+                        <td>Apple Cider</td>
+                        <td>Amber star</td>
+                        <td>Aquatic Fish</td>
+                    </tr>
+                    <tr class="success">
+                        <td scope="row">T</td>
+                        <td>Tequila Sunrise</td>
+                        <td>Twinking star</td>
+                        <td>Teal fish</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <div class="col-md">
-            <div class="thumbnail">
-                <img src="Apple Cider.jpg" alt="Apple Cider" class="img-responsive" style="width: 400px; height: 400px;">
+        
+        <div class="container">
+          <h1>Buttons and Button Groups</h1>
+          
+          <!-- Buttons -->
+          <div>
+              <button type="button" class="btn btn-primary">D</button>
+              <button type="button" class="btn btn-primary">I</button>
+              <button type="button" class="btn btn-primary">V</button>
+              <button type="button" class="btn btn-primary">Y</button>
+              <button type="button" class="btn btn-primary">A</button>
+              <button type="button" class="btn btn-primary">T</button>
+          </div>
+        
+          <!-- Button Groups -->
+          <div class="btn-toolbar" role="toolbar">
+              <!-- Group 1 -->
+              <div class="btn-group mr-2" role="group">
+                  <button type="button" class="btn btn-success">D</button>
+                  <button type="button" class="btn btn-success">I</button>
+                  <button type="button" class="btn btn-success">V</button>
+              </div>
+              <!-- Group 2 -->
+              <div class="btn-group mr-2" role="group">
+                  <button type="button" class="btn btn-danger">Y</button>
+                  <button type="button" class="btn btn-danger">A</button>
+              </div>
+              <!-- Group 3 -->
+              <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-warning">T</button>
+              </div>
+          </div>
+        
+        </div>
+
+ <!-- dorp down -->
+
+
+        <div class="row">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">basic</a></li>
+                    <li><a class="dropdown-item" href="#">advanced</a></li>
+                   
+                </ul>
             </div>
         </div>
     </div>
-</div>
+    </div>
 
-<div class="container">
-    <h1>Styled Table Example</h1>
-    <table class="table table-striped table-bordered table-hover table-sm table-success">
-        <caption>Example Caption</caption>
-        <thead class="thead-dark">
-            <tr>
-                <th scope="col">Letter</th>
-                <th scope="col">Drink</th>
-                <th scope="col">Star Name</th>
-                <th scope="col">Fish</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td scope="row">A</td>
-                <td>Apple Juice</td>
-                <td>Aldebaran</td>
-                <td>Anchovy</td>
-            </tr>
-            <tr>
-                <td scope="row">B</td>
-                <td>Beer</td>
-                <td>Betelgeuse</td>
-                <td>Barracuda</td>
-            </tr>
-            <tr>
-                <td scope="row">C</td>
-                <td>Cola</td>
-                <td>Canopus</td>
-                <td>Cod</td>
-            </tr>
-            <tr>
-                <td scope="row">D</td>
-                <td>Daiquiri</td>
-                <td>Deneb</td>
-                <td>Dolphin</td>
-            </tr>
-            <tr>
-                <td scope="row">E</td>
-                <td>Espresso</td>
-                <td>Elnath</td>
-                <td>Eel</td>
-            </tr>
-            <tr class="success">
-                <td scope="row">F</td>
-                <td>Fruit Punch</td>
-                <td>Fomalhaut</td>
-                <td>Flounder</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 
 
 </body>
+
 </html>
