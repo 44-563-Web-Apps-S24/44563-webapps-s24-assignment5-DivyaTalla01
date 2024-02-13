@@ -10,6 +10,7 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <title>Drinks Page</title>
+    
     <style>
         .vertical-text {
             writing-mode: vertical-rl;
@@ -19,6 +20,9 @@
     </style>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+ <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 
@@ -26,6 +30,26 @@
     <header>
         <h1>Have a cup with Divya Talla</h1>
     </header>
+
+      <!-- navbar JS -->
+
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="#">A Few Drinks</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto"> <!-- Changed mr-auto to ms-auto for right alignment -->
+                <li class="nav-item">
+                    <a class="nav-link" href="basic.html">Basic</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="advanced.html">Advanced</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <div class="container">
         <div class="row">
             <!-- Letters -->
@@ -55,23 +79,26 @@
         than the letters row.
 
     </p>
+
+     
+
     <!-- Images -->
     <div class="container">
         <div class="row">
             <div class="col-md">
                 <div class="thumbnail">
-                    <img src="Daiquiri.jpg" alt="Daiquiri" class="img-responsive" style="width: 400px; height: 400px;">
+                    <img src="Daiquiri.jpg" alt="Daiquiri" class="img-responsive" style="width: 100%; height: Auto;">
                 </div>
             </div>
             <div class="col-md">
                 <div class="thumbnail">
-                    <img src="Iced Tea.jpg" alt="Iced Tea" class="img-responsive" style="width: 400px; height: 400px;">
+                    <img src="Iced Tea.jpg" alt="Iced Tea" class="img-responsive" style="width: 100%; height: Auto;">
                 </div>
             </div>
             <div class="col-md">
                 <div class="thumbnail">
                     <img src="Apple Cider.jpg" alt="Apple Cider" class="img-responsive"
-                        style="width: 400px; height: 400px;">
+                        style="width: 100%; height: Auto;">
                 </div>
             </div>
         </div>
@@ -166,7 +193,6 @@
 
  <!-- dorp down -->
 
-
         <div class="row">
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
@@ -174,9 +200,8 @@
                     Dropdown button
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">basic</a></li>
-                    <li><a class="dropdown-item" href="#">advanced</a></li>
-                   
+                    <li><a class="dropdown-item" href="basic.html">Basic</a></li>
+                    <li><a class="dropdown-item" href="advanced.html">Advanced</a></li>
                 </ul>
             </div>
         </div>
@@ -188,7 +213,13 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+ 
+    
 
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 
